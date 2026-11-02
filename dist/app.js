@@ -86,22 +86,22 @@ document.querySelectorAll('[data-filter]').forEach(button => button.addEventList
 }));
 const projects = [
   {
-    "title": "Residential Building Exterior",
-    "image": "assets/projects/work-1.webp",
+    "title": "Multi-storey Development",
+    "image": "assets/projects/work-3.webp",
     "service": "New construction",
-    "description": "A multi-storey residential building photographed from street level."
+    "description": "An exterior view showing the scale and facade of a multi-storey development."
   },
   {
     "title": "Street-facing Facade",
     "image": "assets/projects/work-2.webp",
     "service": "New construction",
-    "description": "A street-level view of facade detailing and the building entrance."
+    "description": "A street-level view of facade detailing and architectural exterior lighting."
   },
   {
-    "title": "Multi-storey Development",
-    "image": "assets/projects/work-3.webp",
+    "title": "Residential Building Exterior",
+    "image": "assets/projects/work-1.webp",
     "service": "New construction",
-    "description": "An exterior view showing the scale and facade of a multi-storey development."
+    "description": "A multi-storey residential building featuring a modern grey facade with decorative gold panel detailing."
   },
   {
     "title": "Concrete Structure in Progress",
@@ -126,6 +126,12 @@ const projects = [
     "image": "assets/projects/parkview-apartment.webp",
     "service": "New construction",
     "description": "Parkview Apartment, Nazimabad, Karachi."
+  },
+  {
+    "title": "Industrial Flooring & Concrete Work",
+    "image": "assets/projects/industrial-flooring.webp",
+    "service": "Structure & concrete",
+    "description": "Heavy-duty industrial flooring and concrete work for factories and warehouses."
   }
 ];
 const dialog = $('#project-dialog');
