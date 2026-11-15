@@ -238,6 +238,11 @@ document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
   });
 });
 
+$('#send-whatsapp').addEventListener('click', () => {
+  trackEvent('continue_whatsapp_brief', { event_category: 'enquiry', event_label: 'send-whatsapp' });
+  trackEvent('contact_whatsapp_chat', { event_category: 'engagement', event_label: 'send-whatsapp' });
+});
+
 // Smooth Minimalistic FAQ Accordion Animation
 document.querySelectorAll('.faq-item').forEach(details => {
   const summary = details.querySelector('summary');
