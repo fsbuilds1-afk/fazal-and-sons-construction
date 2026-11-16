@@ -243,6 +243,17 @@ $('#send-whatsapp').addEventListener('click', () => {
   trackEvent('contact_whatsapp_chat', { event_category: 'engagement', event_label: 'send-whatsapp' });
 });
 
+document.querySelectorAll('a[href*="google.com/maps"]').forEach(link => {
+  link.addEventListener('click', () => {
+    const isReview = link.closest('.testimonials-rating') !== null || link.id === 'read-google-reviews';
+    const label = isReview ? 'read_on_google_reviews' : (link.closest('.site-journal') ? 'site_journal' : 'footer_directions');
+    if (isReview) {
+      trackEvent('click_google_reviews', { event_category: 'engagement', event_label: 'read_on_google' });
+    }
+    trackEvent('click_google_maps', { event_category: 'engagement', event_label: label });
+  });
+});
+
 // Smooth Minimalistic FAQ Accordion Animation
 document.querySelectorAll('.faq-item').forEach(details => {
   const summary = details.querySelector('summary');
